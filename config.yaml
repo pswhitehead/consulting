@@ -1,0 +1,133 @@
+baseURL: http://something-fresh.org/
+languageCode: en-us
+title: Hugo Fresh Theme
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description:
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/icon.png
+    link: /
+    # Default width/height. Uncomment if you need to change
+    width: 100
+    height: 100
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: [Company Name]
+    # Hero subtitle (optional)
+    subtitle: We use state-of-the-art experimental methods and analytic tools from behavioral science and cognitive neuroscience to make organizations more effective, efficient, and coordinated.
+    subtitle2: Using data-driven methods, we illuminate the unseen behavioral factors underlying decision making and consumer beliefs, and ways to nudge behaviors and beliefs.
+    # Button text
+    buttontext: Contact Us
+    # Where the main hero button links to
+    buttonlink: "#section5"
+    # Hero image (from static/images/___)
+    image: illustrations/icon.png
+    width: 200
+    height: 200
+    # Footer logos (from static/images/logos/clients/___.svg)
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Our Approach
+    url: "#section1"
+  - title: Services and Capabilities
+    url: "#section2"
+  - title: About Us
+    url: "#section4"
+  - title: Contact Us
+    url: "#section5"
+    button: true
+  section1:
+    title: Our Approach
+    subtitle: We use evidenced-based problem solving, integrating behavioral insights and computational approaches from cognitive neuroscience in our consulting approach. This allows us to harness the power of human data to not only confirm decisions and measure impact but also illuminate new insights and areas for growth.
+    subtitle2: We apply our expertise in the experimental methods and analytics of behavioral science and cognitive neuroscience to solve challenges for product/service validation and development, workplace design, and management strategies.
+  section2:
+    title: Our Capabilities
+    subtitle: What can we do for your company?
+    features:
+    - title: Experimental design and survey construction.
+      text: We conduct end-to-end scientific research, using evidence-based strategies to develop experimental designs and surveys for quantitative and qualitative projects. We can conduct experiments to determine strategies for making your organization more efficient and effective. We can conduct experiments to validate current products and services as well as explore the efficacy of new and in development products and services.
+    - title: Consumer panel recruitment and data collection.
+      text: We can help determine and recruit the target population, sample, and/or user base for your specific question. We do well-controlled experimental research with online panels. We can recruit special and custom population samples, as well as conduct field research within organizations.
+      # Icon (from /images/illustrations/icons/___.svg)
+    - title: Data analytics and insights.
+      text: We use analytic tools from behavioral science and cognitive neuroscience to use data driven solutions to solve complex questions. We can apply statistical techniques to answer questions – A/B testing, hierarchical modeling, machine learning, network analysis. We use these analytic methods to deliver clear, data-drive insights on factors influencing decision making and belief as well as actionable solutions for change.
+    - title: Secondary data pipelines and analysis.
+      text: We conduct secondary data analysis on internal and external data. We can create custom pipelines for analysis of existing internal data. We can create new databases and custom pipelines for the collection of external data.
+  section4:
+    title: Who are we?
+    clients:
+    - name: Matthew Stanley, PhD
+      quote: A small bio of Matthew Stanley and what he is about.
+    - name: Peter Whitehead, PhD
+      quote: I am a behavioral and cognitive neuroscientist specializing in using an interdisciplinary approach to deliver actionable insights into human behavior and decision making.
+  section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/lucperkins/github-fresh
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://dribbble.com/#
+      icon: dribbble
+    - link: https://facebook.com/#
+      icon: facebook
+    - link: https://twitter.com/lucperkins
+      icon: twitter
+    - link: https://bitbucket.org/#
+      icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: AGB
+          link: /agb
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
