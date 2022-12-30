@@ -1,0 +1,32 @@
+{{- $section4 := .Site.Params.section4 }}
+{{- $title    := index $section4 "title" }}
+{{- $subtitle := index $section4 "subtitle" }}
+{{- $clients  := index $section4 "clients" }}
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
+      {{- with $subtitle }}
+      <h3 class="subtitle is-5 light-text">{{ . }}</h3>
+      {{- end }}
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+        {{- range $clients }}
+        <div class="column is-6">
+          <div class = "box">
+            <div class="author">
+              <h5 class = "has-text-weight-bold is-size-5">{{ .name }}</h5>
+                <figure class="testimonial">
+                {{ .quote }}
+                </figure>
+            </div>
+        </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+{{- $section1 := .Site.Params.section1 }}
+{{- $title    := index $section1 "title" }}
+{{- $subtitle := index $section1 "subtitle" }}
+{{- $subtitle2 := index $section1 "subtitle2" }}
+<section class="section section-feature-grey is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="title is-2 has-text-centered">{{ $title }}</h2>
+      <br></br>
+      <h3 class="subtitle is-5 is-muted has-text-justified">{{ $subtitle }}</h3>
+      <h3 class="subtitle is-5 is-muted has-text-justified">{{ $subtitle2 }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+  </div>
+</section>

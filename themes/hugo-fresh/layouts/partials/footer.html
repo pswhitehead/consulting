@@ -1,0 +1,25 @@
+{{- $footer      := .Site.Params.footer }}
+{{- $logo        := index $footer "logo" }}
+{{- $quickLinks  := index $footer "quicklinks" }}
+{{- $socialMedia := index $footer "socialmedia" }}
+{{- $bulmaLogo   := index $footer "bulmalogo" }}
+{{- $socialMediaTitle    := index $footer "socialmediatitle" }}
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="{{ "/images/logos/icon.png" | relURL }}">
+        </div>
+      </div>
+            {{- if $bulmaLogo }}
+            <a href="https://bulma.io" target="_blank">
+              <img src="{{ "/images/logos/made-with-bulma.png" | relURL }}" alt="Made with Bulma" width="128" height="24">
+            </a>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
