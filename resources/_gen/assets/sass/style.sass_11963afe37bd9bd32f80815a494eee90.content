@@ -6149,6 +6149,8 @@ label.panel-block {
 .section {
   padding: 3rem 1.5rem; }
   @media screen and (min-width: 1088px) {
+    .section.is-small {
+      padding: 1rem 1.5rem; }
     .section.is-medium {
       padding: 9rem 1.5rem; }
     .section.is-large {
