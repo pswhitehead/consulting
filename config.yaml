@@ -31,7 +31,7 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: [Company Name]
+    title: Eastern Piedmont Management Consulting
     # Hero subtitle (optional)
     subtitle: We use state-of-the-art experimental methods and analytic tools from behavioral science and cognitive neuroscience to make organizations more effective, efficient, and coordinated.
     subtitle2: Using data-driven methods, we illuminate the unseen behavioral factors underlying decision making and consumer beliefs, and ways to nudge behaviors and beliefs.
@@ -76,9 +76,11 @@ params:
     title: Who are we?
     clients:
     - name: Matthew Stanley, PhD
-      quote: A small bio of Matthew Stanley and what he is about.
+      link: https://www.linkedin.com/in/matthew-stanley-2b6999b6/
+      quote: I am an organizational behavior scientist working in the Department of Management in the Fuqua School of Business at Duke University. My research utilizes laboratory experiments and field studies to understand, and intervene on, people's judgments, decisions, and behaviors. 
     - name: Peter Whitehead, PhD
-      quote: I am a behavioral and cognitive neuroscientist specializing in using an interdisciplinary approach to deliver actionable insights into human behavior and decision making.
+      quote: I am a behavioral scientist and cognitive neuroscientist specializing in using an interdisciplinary approach to deliver actionable insights into human behavior and decision making. I evaluate applied questions using my deep understanding of advanced statistical methodologies.
+      link: http://linkedin.com/in/pswhitehead
   section5: true
   footer:
     # Logo (from /images/logos/___)
