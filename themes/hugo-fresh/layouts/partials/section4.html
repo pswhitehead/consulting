@@ -2,6 +2,8 @@
 {{- $title    := index $section4 "title" }}
 {{- $subtitle := index $section4 "subtitle" }}
 {{- $clients  := index $section4 "clients" }}
+{{- $publish  := index $section4 "publish" }}
+{{- $journallist  := index $section4 "journallist" }}
 
 <section class="section is-medium section-secondary" id="section4">
   <div class="container">
@@ -14,23 +16,31 @@
     </div>
 
     <div class="content-wrapper">
-      <div class="columns is-centered">
-        {{- range $clients }}
-        <div class="column is-4">
-          <div class = "box">
-            <div class="author">
-              <h5 class = "has-text-weight-bold is-size-5">{{ .name }}</h5>
-              <figure class="icon is-32x32">
-                  <a href={{ printf "%s" .link | relURL }}>
-                    <img src="{{ "/images/logos/linkedin.png" | relURL }}">
-                  </a>
-                </div>
-              <figure class="testimonial">
-                {{ .quote }}
-              </figure>
+        <div class="columns is-centered">
+          {{- range $clients }}
+          <div class="column is-4">
+            <div class = "box">
+              <div class="author">
+                <h5 class = "has-text-weight-bold is-size-5">{{ .name }}</h5>
+                <figure class="icon is-32x32">
+                    <a href={{ printf "%s" .link | relURL }}>
+                      <img src="{{ "/images/logos/linkedin.png" | relURL }}">
+                    </a>
+                  </div>
+                <figure class="testimonial">
+                  {{ .quote }}
+                </figure>
+            </div>
+          </div>
+          {{- end }}
         </div>
-        </div>
-        {{- end }}
+      <div class = "columns is-centered"> 
+         <div class="column is-8">
+            <div class = "box">
+              <h5 class = "has-text is-size-5 has-text-centered">{{$publish}}</h5>
+              <h4 class = "has-text is-size-6 has-text-centered">{{$journallist}}</h4>
+            </div>
+          </div>
       </div>
     </div>
   </div>

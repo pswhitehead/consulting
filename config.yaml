@@ -81,6 +81,8 @@ params:
     - name: Peter Whitehead, PhD
       quote: I am a behavioral scientist and cognitive neuroscientist specializing in using an interdisciplinary approach to deliver actionable insights into human behavior and decision making. I evaluate applied questions using my deep understanding of advanced statistical methodologies.
       link: http://linkedin.com/in/pswhitehead
+    publish: "We have published in top, peer-reviewed journals, including:"
+    journallist: "Journal of Personality and Social Psychology, Journal of Consumer Psychology, Journal of Experimental Psychology, Proceedings of the National Academy of Sciences, Journal of Experimental Psychology: General, and Journal of Experimental Psychology: Learning, Memory, and Cognition."
   section5: true
   footer:
     # Logo (from /images/logos/___)
