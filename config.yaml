@@ -51,7 +51,7 @@ params:
   - title: Services and Capabilities
     url: "#section2"
   - title: About Us
-    url: "#section4"
+    url: "#section3"
   - title: Contact Us
     url: "#section5"
     button: true
@@ -72,7 +72,7 @@ params:
       text: We use analytic tools from behavioral science and cognitive neuroscience to use data driven solutions to solve complex questions. We can apply statistical techniques to answer questions – A/B testing, hierarchical modeling, machine learning, network analysis. We use these analytic methods to deliver clear, data-drive insights on factors influencing decision making and belief as well as actionable solutions for change.
     - title: Secondary data pipelines and analysis.
       text: We conduct secondary data analysis on internal and external data. We can create custom pipelines for analysis of existing internal data. We can create new databases and custom pipelines for the collection of external data.
-  section4:
+  section3:
     title: Who are we?
     clients:
     - name: Matthew Stanley, PhD
@@ -83,6 +83,11 @@ params:
       link: http://linkedin.com/in/pswhitehead
     publish: "We have published in top, peer-reviewed journals, including:"
     journallist: "Journal of Personality and Social Psychology, Journal of Consumer Psychology, Journal of Experimental Psychology, Proceedings of the National Academy of Sciences, Journal of Experimental Psychology: General, and Journal of Experimental Psychology: Learning, Memory, and Cognition."
+  section4:
+    clients:
+    - name: Scot Sessions
+      quote: We have worked with Matt for some time now. The research planning and insights he provides have been well thought out and tremendously helpful to the work we are doing with inclusion and diversity in the recruiting and hiring process. Matt is a numbers master and works to deliver the most clear picture of the research so even a non-researcher can understand the data. Matt is a joy to work with and we look forward to future engagements.
+      job: CEO & Founder, TalVista
   section5: true
   footer:
     # Logo (from /images/logos/___)

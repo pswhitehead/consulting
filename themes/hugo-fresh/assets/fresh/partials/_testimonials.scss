@@ -7,7 +7,7 @@ Testimonials Styles
     overflow: hidden;
     margin: 10px auto;
     min-width: 220px;
-    max-width: 310px;
+    max-width: 1000px;
     width: 100%;
     color: #333;
     text-align: left;
@@ -74,16 +74,17 @@ Testimonials Styles
         }
         h5 {
             text-transform: capitalize;
-            bottom: 60%;
+            bottom: 80%;
             margin: 0;
             font-weight: 600;
             font-size: 1.2rem;
             color: $blue-grey;
         }
         span {
-            font-size: 0.8em;
-            color: $white;
-            top: 50%;
+            font-size: 1rem;
+            color: $black;
+            top: 15%;
+            font-weight: 600;
         }
     }
 }

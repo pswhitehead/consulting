@@ -1,28 +1,47 @@
-{{- $section3   := .Site.Params.section3 }}
-{{- $title      := index $section3 "title" }}
-{{- $subtitle   := index $section3 "subtitle" }}
-{{- $image      := index $section3 "image" }}
-{{- $buttonText := index $section3 "buttontext" }}
-{{- $buttonLink := index $section3 "buttonlink" }}
-<section class="section section-feature-grey is-medium" id="section3">
+{{- $section3 := .Site.Params.section3 }}
+{{- $title    := index $section3 "title" }}
+{{- $subtitle := index $section3 "subtitle" }}
+{{- $clients  := index $section3 "clients" }}
+{{- $publish  := index $section3 "publish" }}
+{{- $journallist  := index $section3 "journallist" }}
+
+<section class="section is-small section-secondary" id="section3">
   <div class="container">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <div class="has-text-centered">
-          <img class="pushed-image" src="{{ printf "/images/%s" $image | relURL }}">
-        </div>
-      </div>
-    </div>
 
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2">{{ $title }}</h2>
-      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <h2 class="title is-2 light-text is-spaced">{{ $title }}</h2>
+      {{- with $subtitle }}
+      <h3 class="subtitle is-5 light-text">{{ . }}</h3>
+      {{- end }}
     </div>
 
-    <p class="has-text-centered mt-20">
-      <a class="button cta is-large rounded secondary-btn raised" href="{{ $buttonLink }}">
-        {{ $buttonText }}
-      </a>
-    </p>
+    <div class="content-wrapper">
+        <div class="columns is-centered">
+          {{- range $clients }}
+          <div class="column is-4">
+            <div class = "box">
+              <div class="author">
+                <h5 class = "has-text-weight-bold is-size-5">{{ .name }}</h5>
+                <figure class="icon is-32x32">
+                    <a href={{ printf "%s" .link | relURL }}>
+                      <img src="{{ "/images/logos/linkedin.png" | relURL }}">
+                    </a>
+                  </div>
+                <figure class="testimonial">
+                  {{ .quote }}
+                </figure>
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      <div class = "columns is-centered"> 
+         <div class="column is-8">
+            <div class = "box">
+              <h5 class = "has-text is-size-5 has-text-centered">{{$publish}}</h5>
+              <h4 class = "has-text is-size-6 has-text-centered">{{$journallist}}</h4>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
 </section>

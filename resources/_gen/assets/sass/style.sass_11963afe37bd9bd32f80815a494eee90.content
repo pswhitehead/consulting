@@ -6149,8 +6149,10 @@ label.panel-block {
 .section {
   padding: 3rem 1.5rem; }
   @media screen and (min-width: 1088px) {
+    .section.is-supersmall {
+      padding: 0rem 0rem; }
     .section.is-small {
-      padding: 1rem 1.5rem; }
+      padding: 4rem 1.5rem; }
     .section.is-medium {
       padding: 9rem 1.5rem; }
     .section.is-large {
@@ -6845,7 +6847,7 @@ Testimonials Styles
   overflow: hidden;
   margin: 10px auto;
   min-width: 220px;
-  max-width: 310px;
+  max-width: 1000px;
   width: 100%;
   color: #333;
   text-align: left;
@@ -6905,15 +6907,16 @@ Testimonials Styles
       padding: 3px 5px; }
     .testimonial .author h5 {
       text-transform: capitalize;
-      bottom: 60%;
+      bottom: 80%;
       margin: 0;
       font-weight: 600;
       font-size: 1.2rem;
       color: #444F60; }
     .testimonial .author span {
-      font-size: 0.8em;
-      color: #fff;
-      top: 50%; }
+      font-size: 1rem;
+      color: #0a0a0a;
+      top: 15%;
+      font-weight: 600; }
 
 /* ==========================================================================
 Responsive Styles
