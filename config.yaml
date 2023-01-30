@@ -88,6 +88,9 @@ params:
     - name: Scot Sessions
       quote: We have worked with Matt for some time now. The research planning and insights he provides have been well thought out and tremendously helpful to the work we are doing with inclusion and diversity in the recruiting and hiring process. Matt is a numbers master and works to deliver the most clear picture of the research so even a non-researcher can understand the data. Matt is a joy to work with and we look forward to future engagements.
       job: CEO & Founder, TalVista
+    - name: Russell Spitler
+      quote: Matt has shared his extensive expertise in experimental design, survey construction, participant recruitment, and data analysis with us. He has been absolutely instrumental in the work we are doing to further the application of modern psychology principles in cybersecurity. He takes the time to explain clearly how we should design studies, why different statistical analyses were used, how to interpret those analyses, and how to present the results to a more general audience. Since we met, Matt has been reliable, professional, and easy to work with.
+      job: CEO & Co-Founder, Nudge Security
   section5: true
   footer:
     # Logo (from /images/logos/___)
